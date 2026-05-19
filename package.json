@@ -1,0 +1,17 @@
+{
+  "name": "doc-sync",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev --workspace=packages/server\" \"npm run dev --workspace=packages/client\"",
+    "build": "npm run build --workspace=packages/crdt-core && npm run build --workspace=packages/server && npm run build --workspace=packages/client",
+    "test": "npm test --workspace=packages/crdt-core",
+    "install:all": "npm install"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
