@@ -2,9 +2,6 @@
 
 A real-time collaborative document editor built with **CRDT (RGA algorithm)**, **JWT + bcrypt authentication**, **MongoDB**, **React + Monaco Editor**, and **WebSockets**.
 
-## Stack
-
-| Layer | Tech |
 # DocSync
 
 A real-time collaborative document editor where multiple users can simultaneously edit the same document without conflicts. The system uses a custom RGA (Replicated Growable Array) CRDT to guarantee eventual consistency across replicas.
